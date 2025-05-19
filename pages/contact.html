@@ -49,12 +49,13 @@
         </p>
       </div>
       <div class="form">
-        <form action="process.php" method="post">
+        <form action="process.php" method="post" name="contact" netlify>
           <label for="firstname" class="visually-hidden">First Name</label>
           <input
             type="text"
             class="firtname"
             id="firstname"
+            name="firstname"
             placeholder="First Name"
           />
           <label for="firstname" class="visually-hidden">Last Name</label>
@@ -62,6 +63,7 @@
             type="text"
             class="lastname"
             id="lastname"
+            name="lastname"
             placeholder="Last Name"
           />
           <label for="firstname" class="visually-hidden">Email</label>
@@ -69,15 +71,17 @@
             type="text"
             class="email"
             id="email"
+            name="email"
             placeholder="Email Address"
           />
           <label for="firstname" class="visually-hidden">Message</label>
           <textarea
             name="message"
             id="message"
+            name="message"
             placeholder="Message"
           ></textarea>
-          <button>Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
